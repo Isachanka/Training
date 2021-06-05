@@ -307,4 +307,4 @@ function spinWords(string){
       return result ? result : str
   }
 
-  console.log(truncate("Vsem Privet", 20))
+  // console.log(truncate("Vsem Privet", 20))
