@@ -328,3 +328,19 @@ function spinWords(string){
   }
   
   // alert(sumInput());
+
+function getMaxSubSum(arr){
+    let sum = 0;
+    let highestSum = 0;
+
+    for(let key of arr){
+      sum += key;
+      highestSum = Math.max(highestSum, sum)
+      if(sum < 0) sum = 0;
+    }
+
+    alert(highestSum);
+}
+
+
+//alert(getMaxSubSum());
