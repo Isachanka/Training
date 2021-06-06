@@ -378,21 +378,19 @@ function cameLize(str){
 
 // alert(cameLize("list-style-image"))
 
-function filterRange(arr, a, b){
-    let result;
-    result = arr.filter((item, index) => item >= a && item <= b)
-    return result;
-}
-
-//alert(filterRange(arr, 1, 4))
-
-function filterRangeInPlace(arr, a, b){
-  for( i = 0; i < arr.length(); i++){
-      if(arr[i] <= b || arr[i] >= a){
-          arr.slice(i,1);
-          i--
+function duplicateEncode(word){
+    let array = word.toLowerCase().split(``)
+    let newArray = []
+    let result = ``
+    for(let i = 0; i < array.length ; i++){
+      if(array.splice(i,1).includes(array[i])){
+        result += `)`
+      } 
+      else {
+        result += `(`
       }
-  }
+    }
+  return result
 }
 
-// asdasdasds
+//alert(duplicateEncode("recede"))
