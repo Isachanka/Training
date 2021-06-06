@@ -394,3 +394,14 @@ function duplicateEncode(word){
 }
 
 //alert(duplicateEncode("recede"))
+
+function kata(str){
+    let array = str.slice(``);
+    let result = []
+    for(let i = 0; i < array.length; i++){
+        array[i] != array[i + 1] ? result.push(array[i]) : 0;
+    }
+    return result;
+}
+
+// alert(kata(`AAABBBCCCDDDDEEEE`))
