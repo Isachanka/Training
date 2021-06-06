@@ -344,3 +344,29 @@ function getMaxSubSum(arr){
 
 
 //alert(getMaxSubSum());
+
+function cameLize(str){
+    return str.split(`-`).map((item, index) => index == 0 ? item : item[0].toUpperCase() + item.slice(1)
+    ).join(``)
+}
+
+// alert(cameLize("list-style-image"))
+
+function filterRange(arr, a, b){
+    let result;
+    result = arr.filter((item, index) => item >= a && item <= b)
+    return result;
+}
+
+//alert(filterRange(arr, 1, 4))
+
+function filterRangeInPlace(arr, a, b){
+  for( i = 0; i < arr.length(); i++){
+      if(arr[i] <= b || arr[i] >= a){
+          arr.slice(i,1);
+          i--
+      }
+  }
+}
+
+// asdasdasds
