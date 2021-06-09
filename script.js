@@ -405,3 +405,27 @@ function kata(str){
 }
 
 // alert(kata(`AAABBBCCCDDDDEEEE`))
+
+function alphabetPosition(text) {
+    var result = "";
+    for (var i = 0; i < text.length; i++) {
+      var code = text.toUpperCase().charCodeAt(i)
+      if (code > 64 && code < 91) result += (code - 64) + " ";
+    }
+  
+    return result.slice(0, result.length - 1);
+  }
+  //console.log(alphabetPosition("The sunset sets at twelve o' clock."));
+
+  function iqTest(numbers){
+    let arr = numbers.split(` `),
+
+    oddarr = arr.filter( (item) => item % 2 == 0),
+    evenarr = arr.filter( (item) => item % 2 != 0)
+
+    return oddarr.length < evenarr.length ? arr.indexOf(oddarr[0]) + 1 : arr.indexOf(evenarr[0]) + 1
+  }
+
+
+// alert( iqTest("2 4 7 8 10"))
+
