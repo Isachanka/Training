@@ -480,3 +480,16 @@ function order(words){
 
 // alert(order("4of Fo1r pe6ople g3ood th5e the2"))
 
+
+function tower_builder(floors){
+    let space,star, tower = [];
+    for(let i = 1; i <= floors; i++){
+      space = " ".repeat(floors - i);
+      star  = "*".repeat((2*i) - 1);
+      tower.push(`${space}${star}${space}`);
+    }
+    return tower;
+  }
+
+// console.log(tower_builder(6))
+
