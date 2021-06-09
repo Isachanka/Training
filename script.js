@@ -429,3 +429,28 @@ function alphabetPosition(text) {
 
 // alert( iqTest("2 4 7 8 10"))
 
+
+function longestConsec(strarr, k) {
+    let max = 0;
+    let result;
+    let sumString;
+    if(strarr.length == 0 || k < strarr.length || k <= 0 ) return ""
+    for(let i = 0; i < strarr.length - 1; i++){
+
+      for(let pp = 0; pp < k; pp++){
+
+        sumString = strarr[i] + strarr[i + 1]
+
+        if(sumString.length > max){
+
+            max = strarr[i].length + strarr[i + 1].length
+
+            result = strarr[i] + strarr[i + 1];
+        }
+      }
+    }
+  return result
+}
+
+// alert(longestConsec(["zone", "abigail", "theta", "form", "libe", "zas"], 2))
+
