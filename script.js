@@ -454,3 +454,15 @@ function longestConsec(strarr, k) {
 
 // alert(longestConsec(["zone", "abigail", "theta", "form", "libe", "zas"], 2))
 
+function persistence(num) {
+    let arr = num.toString().split(``)
+    let i;
+    for(i = 0; arr.length > 1; i++){
+    arr.reduce((value, item, index) => arr = value*item,1).roString().split(``);
+    arr = arr.toString().split(``) 
+    } 
+    return i 
+ }
+
+// persistence(21323)
+
