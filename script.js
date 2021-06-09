@@ -466,3 +466,17 @@ function persistence(num) {
 
 // persistence(21323)
 
+
+function order(words){
+    let arr = words.split(` `);
+    let newArray = [];
+    for(let i = 1 ; i <= 9; i++){   // you can change `9` for `arr.length if you need optimization  
+      for(let word of arr){         
+        if(word.includes(i.toString())) newArray.push(word)
+      }
+    }
+    return newArray.length != 0 ? newArray.join(` `) : ""
+  }
+
+// alert(order("4of Fo1r pe6ople g3ood th5e the2"))
+
