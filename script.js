@@ -493,3 +493,14 @@ function tower_builder(floors){
 
 // console.log(tower_builder(6))
 
+function validParentheses(parens){
+    let value = 0;
+    for(let letter of parens){
+      letter == "(" ? value++ : value--
+      if(value < 0) return false
+    }
+    return value == 0
+  }
+
+// alert(validParentheses( "(()())" ))
+
