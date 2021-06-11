@@ -555,3 +555,16 @@ function validSolution(board){
 
 */
 
+var maxSequence = function(arr){
+    if(arr.length == 0) return 0;
+    let max = 0, sum = 0;
+    for(let item of arr){
+      sum = sum + item
+      max = Math.max(sum, max)
+      sum = sum < 0? 0 : sum;
+    }
+    return max;
+  }
+
+// alert(maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+
