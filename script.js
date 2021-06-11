@@ -568,3 +568,13 @@ var maxSequence = function(arr){
 
 // alert(maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 
+
+let arr = [5, 3, 8, 1]
+
+
+function sdas(ar, a, b){
+    arr = ar.filter((item) => item <= b && item >= a);
+}
+
+//sdas(arr, 1, 4);
+
