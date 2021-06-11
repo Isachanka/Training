@@ -504,3 +504,17 @@ function validParentheses(parens){
 
 // alert(validParentheses( "(()())" ))
 
+
+function whoIsNext(names, r){
+    let lastPerson;
+    for(let i = 1; i <= r; i++){
+        lastPerson = names[0]
+        names.push(names[0]);
+        names.push(names[0]);
+        names.shift();
+    }
+    return lastPerson;
+}
+
+// alert(whoIsNext(["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"], 7230702951))
+
