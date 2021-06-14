@@ -604,3 +604,17 @@ function unique(arr) {
 
 
 // alert(unique());
+
+
+function aclean(arr){
+    let map = new Map();
+
+    for(let word of arr){
+        let key = word.toLowerCase().split(``).sort().join(``);
+        map.set(key, word);
+    }
+    return map;
+}
+
+
+//
