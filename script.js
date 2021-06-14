@@ -578,3 +578,9 @@ function sdas(ar, a, b){
 
 //sdas(arr, 1, 4);
 
+
+function pigIt(str){
+    return str.split(` `).map((item) => item = item.length == 1 ? item : item.slice(1) + item[0] + `ay`).join(` `);
+  }
+
+// alert(pigIt('Pig latin is cool'))
