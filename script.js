@@ -584,3 +584,15 @@ function pigIt(str){
   }
 
 // alert(pigIt('Pig latin is cool'))
+
+
+function unique(arr){
+    let result = [];
+    for(let item of arr){
+        if(result.includes(item)) continue;
+        result.push(item);
+    }
+    return result;
+}
+
+// alert( unique(strings) )
