@@ -20,7 +20,7 @@ function sumString(a,b,c,d){
     return b + a + c + a + d;
 }
 
-// alert(sumString('*', '1', 'b', '1c')) 
+// alert(sumString('*', '1', 'b', '1c')) ///
 
 function evensAndOdds(n){
     if(n % 2 == 0){
